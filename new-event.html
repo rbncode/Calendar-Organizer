@@ -9,19 +9,38 @@
   <body>
     <header>
       <div class="navbar">
+        <img class="img-header" src="style/calendar.png" alt="" />
         <a href="index.html">OrganizedCalendar</a>
-        <a href="calendar.html">Calendar</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
         <a href="login.html">Login</a>
         <a href="register.html">Register</a>
       </div>
     </header>
 
-    <div id="calendar">
-      <div id="c-controls">
-        <button>Previous</button>
-        <button>Next</button>
+    <div class="row">
+      <div class="column">
+        <div id="calendar" class="calendar">
+          <div id="calendar"></div>
+        </div>
       </div>
-      <div id="calendar"></div>
+      <div class="column">
+        <form class="organizer" action="events.html" method="get">
+          <h2>Select start date:</h2>
+          <input type="date" name="start-day" id="start-day" required />
+          <h3>Enter start time:</h3>
+          <div class="form">
+            <input type="time" name="stat-time" id="start-time" required />
+            <h2>Select end date:</h2>
+            <input type="date" name="end-day" id="end-day" required />
+            <h3>Enter end time:</h3>
+            <input type="time" name="end-time" id="end-time" required />
+          </div>
+          <div class="form">
+            <button type="submit" class="button">Save</button>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="calendar.js"></script>
   </body>
