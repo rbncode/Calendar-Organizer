@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="index.html">OrganizedCalendar</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </header>
+    <form id="sign-up" action="new-event.html" method="post" class="form">
+      <h2>Sign up</h2>
+      <div>
+        <p>Username</p>
+        <input type="text" id="new-username" placeholder="Username" required />
+        <p>Email</p>
+        <input type="text" id="new-email" placeholder="Email" required />
+        <p>Password</p>
+        <input
+          type="password"
+          id="new-password"
+          placeholder="Password"
+          required
+        />
+        <p>Confirm Password</p>
+        <input
+          type="password"
+          id="confirm-new-password"
+          placeholder="Confirm password"
+          required
+        />
+      </div>
+      <div class="sign-up">
+        <button class="button" type="submit">Sign up</button>
+      </div>
+    </form>
+  </body>
+</html>
